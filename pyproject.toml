@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=77.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mobotpy"
+version = "0.1.0"
+description = "Mobile robot simulation examples for teaching and learning."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "numpy>=1.24",
+  "scipy>=1.10",
+  "matplotlib>=3.7",
+  "ipython>=8.0",
+  "ipykernel>=6.0",
+  "cvxpy>=1.3",
+]
+authors = [
+  { name = "Joshua A. Marshall", email = "joshua.marshall@queensu.ca" }
+]
+license = "MIT"
+
+[tool.setuptools]
+include-package-data = true
+package-dir = { "" = "." }
+
+[tool.setuptools.package-data]
+mobotpy = ["styles/*.mplstyle"]
+
+[tool.setuptools.packages.find]
+where = ["."]
+
+[project.urls]
+Homepage = "https://github.com/botprof/mobotpy"
+Repository = "https://github.com/botprof/mobotpy"
+Issues = "https://github.com/botprof/mobotpy/issues"

@@ -1,0 +1,24 @@
+# Matplotlib style for the MoBotPy book
+# Author: Joshua A. Marshall <joshua.marshall@queensu.ca>
+# URL: https://github.com/botprof/mobotpy
+
+# Set default figure settings
+figure.dpi : 100
+
+# Remove legend frame
+legend.frameon : False
+
+# Font configuration
+font.size : 10
+
+# Save configuration
+savefig.format : pdf
+savefig.bbox : tight
+
+# Set the plot style
+axes.grid : True
+grid.color : 0.95
+
+# Use LaTeX for math formatting
+text.usetex : True
+text.latex.preamble : \usepackage{cmbright,amsmath,bm}
