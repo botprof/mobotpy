@@ -1,5 +1,5 @@
 """
-Python script one_d_disturbance_observer.py demonstrating a disturbance observer.
+Python script disturbance_observer.py demonstrating a disturbance observer.
 Author: Joshua A. Marshall <joshua.marshall@queensu.ca>
 URL: https://github.com/botprof/mobotpy
 """
@@ -168,7 +168,7 @@ def plotting(t, x, u, x_hat, w_hat):
 
     if export_plots:
         # Save the figure to a PDF file
-        plt.savefig(pdf_path + "one_d_disturbance_observer_fig1.pdf")
+        plt.savefig(pdf_path + "disturbance_observer_fig1.pdf")
     else:
         # Show the plot to the screen
         plt.show()
@@ -178,7 +178,7 @@ def plotting(t, x, u, x_hat, w_hat):
 
     # Create and save the animation
     ani = cart.animate(
-        x[0, :], T, export_plots, gif_path + "one_d_disturbance_observer.gif"
+        x[0, :], T, export_plots, gif_path + "disturbance_observer.gif"
     )
 
     if not export_plots:

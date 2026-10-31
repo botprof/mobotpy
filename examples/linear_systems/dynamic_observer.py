@@ -1,5 +1,5 @@
 """
-Python script one_d_dynamic_observer.py Luenberger observer example.
+Python script dynamic_observer.py Luenberger observer example.
 Author: Joshua A. Marshall <joshua.marshall@queensu.ca>
 URL: https://github.com/botprof/mobotpy
 """
@@ -120,7 +120,7 @@ def plotting(t, x, x_hat):
 
     if export_plots:
         # Save the figure to a PDF file
-        plt.savefig(pdf_path + "one_d_dynamic_observer_fig1.pdf")
+        plt.savefig(pdf_path + "dynamic_observer_fig1.pdf")
     else:
         # Show the plot to the screen
         plt.show()

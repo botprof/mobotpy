@@ -1,5 +1,5 @@
 """
-Python script one_d_combined_control.py of a controller combined with Luenberger observer.
+Python script combined_control.py of a controller combined with Luenberger observer.
 Author: Joshua A. Marshall <joshua.marshall@queensu.ca>
 URL: https://github.com/botprof/mobotpy
 """
@@ -149,7 +149,7 @@ def plotting(t, x, u, x_hat):
 
     if export_plots:
         # Save the figure to a PDF file
-        plt.savefig(pdf_path + "one_d_combined_control_fig1.pdf")
+        plt.savefig(pdf_path + "combined_control_fig1.pdf")
     else:
         # Show the plot to the screen
         plt.show()
@@ -159,7 +159,7 @@ def plotting(t, x, u, x_hat):
 
     # Create and save the animation
     ani = cart.animate(
-        x[0, :], T, export_plots, gif_path + "one_d_combined_control.gif"
+        x[0, :], T, export_plots, gif_path + "combined_control.gif"
     )
 
     if not export_plots:

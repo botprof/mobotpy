@@ -1,5 +1,5 @@
 """
-Script one_d_discrete_lqr.py for control of a 1D mobile robot with LQR.
+Script discrete_lqr.py for control of a 1D mobile robot with LQR.
 Author: Joshua A. Marshall <joshua.marshall@queensu.ca>
 URL: https://github.com/botprof/mobotpy
 """
@@ -170,7 +170,7 @@ def plotting(t, x, u):
 
     if export_plots is True:
         # Save the figure to a PDF file
-        plt.savefig(pdf_path + "one_d_discrete_lqr_fig1.pdf")
+        plt.savefig(pdf_path + "discrete_lqr_fig1.pdf")
     else:
         # Show the plot to the screen
         plt.show()
@@ -179,7 +179,7 @@ def plotting(t, x, u):
     cart = Cart(LENGTH)
 
     # Create and save the animation
-    ani = cart.animate(x[0, :, 0], T, export_plots, gif_path + "one_d_discrete_lqr.gif")
+    ani = cart.animate(x[0, :, 0], T, export_plots, gif_path + "discrete_lqr.gif")
 
     if not export_plots:
         # Show animation in HTML output if you are using IPython or Jupyter notebooks

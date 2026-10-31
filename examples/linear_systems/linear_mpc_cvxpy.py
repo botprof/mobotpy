@@ -1,5 +1,5 @@
 """
-Script one_d_linear_mpc_cvxpy.py demonstrating linear MPC with CVXPY.
+Script linear_mpc_cvxpy.py demonstrating linear MPC with CVXPY.
 Author: Joshua A. Marshall <joshua.marshall@queensu.ca>
 URL: https://github.com/botprof/mobotpy
 """
@@ -185,7 +185,7 @@ def plotting(t, x_ref, x_mpc, x_lqr, u_mpc, u_lqr):
 
     if export_plots:
         # Save the figure to a PDF file
-        plt.savefig(pdf_path + "one_d_linear_mpc_cvxpy_fig1.pdf")
+        plt.savefig(pdf_path + "linear_mpc_cvxpy_fig1.pdf")
     else:
         # Show the plot to the screen
         plt.show()

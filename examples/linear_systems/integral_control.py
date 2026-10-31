@@ -1,5 +1,5 @@
 """
-Python script one_d_integral_control.py demonstrating integral control.
+Python script integral_control.py demonstrating integral control.
 Author: Joshua A. Marshall <joshua.marshall@queensu.ca>
 URL: https://github.com/botprof/mobotpy
 """
@@ -142,7 +142,7 @@ def plotting(t, x, u):
 
     if export_plots is True:
         # Save the figure to a PDF file
-        plt.savefig(pdf_path + "one_d_integral_control_fig1.pdf")
+        plt.savefig(pdf_path + "integral_control_fig1.pdf")
     else:
         # Show the plot to the screen
         plt.show()
@@ -152,7 +152,7 @@ def plotting(t, x, u):
 
     # Create and save the animation
     ani = vehicle.animate(
-        x[0, :], T, export_plots, gif_path + "one_d_integral_control.gif"
+        x[0, :], T, export_plots, gif_path + "integral_control.gif"
     )
 
     if not export_plots:

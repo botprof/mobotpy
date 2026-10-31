@@ -1,5 +1,5 @@
 """
-Python script one_d_discrete_control.py for control of a linear 1D dynamic mobile robot.
+Python script discrete_control.py for control of a linear 1D dynamic mobile robot.
 Author: Joshua A. Marshall <joshua.marshall@queensu.ca>
 URL: https://github.com/botprof/mobotpy
 """
@@ -128,7 +128,7 @@ def plotting(t, x, u):
 
     if export_plots:
         # Save the figure to a PDF file
-        plt.savefig(pdf_path + "one_d_discrete_control_fig1.pdf")
+        plt.savefig(pdf_path + "discrete_control_fig1.pdf")
     else:
         # Show the plot to the screen
         plt.show()
@@ -138,7 +138,7 @@ def plotting(t, x, u):
 
     # Create and save the animation
     ani = cart.animate(
-        x[0, :], T, export_plots, gif_path + "one_d_discrete_control.gif"
+        x[0, :], T, export_plots, gif_path + "discrete_control.gif"
     )
 
     if not export_plots:

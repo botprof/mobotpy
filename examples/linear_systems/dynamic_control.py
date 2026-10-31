@@ -1,5 +1,5 @@
 """
-Python script one_d_dynamic_control.py for control of a linear 1D dynamic mobile robot.
+Python script dynamic_control.py for control of a linear 1D dynamic mobile robot.
 Author: Joshua A. Marshall <joshua.marshall@queensu.ca>
 URL: https://github.com/botprof/mobotpy
 """
@@ -120,7 +120,7 @@ def plotting(t, x, u):
 
     if export_plots:
         # Save the figure to a PDF file
-        plt.savefig(pdf_path + "one_d_dynamic_control_fig1.pdf")
+        plt.savefig(pdf_path + "dynamic_control_fig1.pdf")
     else:
         # Show the plot to the screen
         plt.show()
@@ -129,7 +129,7 @@ def plotting(t, x, u):
     cart = Cart(LENGTH)
 
     # Create and save the animation
-    ani = cart.animate(x[0, :], T, export_plots, gif_path + "one_d_dynamic_control.gif")
+    ani = cart.animate(x[0, :], T, export_plots, gif_path + "dynamic_control.gif")
 
     if not export_plots:
         # Show animation in HTML output if you are using IPython or Jupyter notebooks
