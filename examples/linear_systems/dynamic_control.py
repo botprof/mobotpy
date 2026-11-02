@@ -81,13 +81,13 @@ def plotting(t, x, u):
     """Plot the results of the simulation and create an animation."""
 
     # Set `use_tex` to `True` to use an external LaTeX installation in the plots
-    use_tex = True
+    use_tex = False
 
     # Set `export_plots` to `True` to save the plots and animations to files
-    export_plots = True
+    export_plots = False
 
     # Set `book_format` to `True` to use fancy LaTeX fonts (requires `use_tex = True`)
-    book_format = True
+    book_format = False
 
     # Use LaTeX formatting in the plots
     if use_tex:
